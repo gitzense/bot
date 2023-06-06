@@ -14,6 +14,8 @@
 - RGB LED лента (4 светодиода),
 - servo 180 x2.
 
+
+
 https://github.com/gitzense/bot/assets/114235388/fd15c5e6-877d-4c51-bf17-9566ea2b325a
 
 
@@ -34,6 +36,7 @@ https://github.com/gitzense/bot/assets/114235388/fd15c5e6-877d-4c51-bf17-9566ea2
 
 
 https://github.com/gitzense/bot/assets/114235388/252602ba-0840-4733-84bb-086d04a6e93f
+
 
 
 
