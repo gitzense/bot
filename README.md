@@ -39,7 +39,6 @@ https://github.com/gitzense/bot/assets/114235388/252602ba-0840-4733-84bb-086d04a
 
 
 
-
 Использованные библиотеки:
 - Servo by Michael Margolis (управление сервоприводами),
 - Adafruit NeoPixel by Adafruit (настройка светодиодной ленты),
