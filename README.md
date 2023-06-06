@@ -45,6 +45,7 @@ https://github.com/gitzense/bot/assets/114235388/252602ba-0840-4733-84bb-086d04a
 
 1. Код для контроллера:
 
+``` c++
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
@@ -78,8 +79,11 @@ void loop() {
   radio.write(&data, sizeof(data));
   delay(15);
 }
+```
 
 2. Код для робота:
+
+``` c++
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
@@ -168,4 +172,4 @@ void loop() {
     }
   }
 }
-
+```
