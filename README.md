@@ -61,6 +61,7 @@ RF24 radio(9, 10);
 int data[3];
 
 void setup() {
+
   Serial.begin(9600);
   radio.begin();
   radio.setChannel(2);
@@ -70,9 +71,11 @@ void setup() {
   radio.stopListening();
   
   pinMode(BTN_PIN, INPUT);
+  
 }
 
 void loop() {
+
   data[0] = analogRead(VX_PIN);
   data[1] = analogRead(VY_PIN);
   data[2] = digitalRead(BTN_PIN);
@@ -80,6 +83,7 @@ void loop() {
   
   radio.write(&data, sizeof(data));
   delay(15);
+  
 }
 ```
 
@@ -113,7 +117,7 @@ int data[3];
 int pos = 15;
 
 void setup() {
-  // put your setup code here, to run once:
+  
   Serial.begin(9600);
   myservo.attach(3);
   myservo2.attach(12);
@@ -128,6 +132,7 @@ void setup() {
   for (int i = 4; i < 8; i++) {     
     pinMode(i, OUTPUT);
   }
+  
 }
 
 void loop() { 
@@ -173,5 +178,6 @@ void loop() {
       analogWrite(SPEED_2, 0);      
     }
   }
+  
 }
 ```
