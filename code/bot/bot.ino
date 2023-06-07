@@ -25,7 +25,7 @@ int data[3];
 int pos = 15;
 
 void setup() {
-  // put your setup code here, to run once:
+
   Serial.begin(9600);
   myservo.attach(3);
   myservo2.attach(12);
@@ -40,10 +40,11 @@ void setup() {
   for (int i = 4; i < 8; i++) {     
     pinMode(i, OUTPUT);
   }
+
 }
 
 void loop() { 
-  
+
   if (radio.available()) {
     radio.read(&data, sizeof(data));
 
@@ -84,7 +85,5 @@ void loop() {
       analogWrite(SPEED_1, 0);
       analogWrite(SPEED_2, 0);      
     }
-
-
   }
 }

@@ -11,7 +11,7 @@ RF24 radio(9, 10);
 int data[3];
 
 void setup() {
-  // put your setup code here, to run once:
+
   Serial.begin(9600);
   radio.begin();
   radio.setChannel(2);
@@ -21,11 +21,11 @@ void setup() {
   radio.stopListening();
   
   pinMode(BTN_PIN, INPUT);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
- 
+
   data[0] = analogRead(VX_PIN);
   data[1] = analogRead(VY_PIN);
   data[2] = digitalRead(BTN_PIN);
@@ -33,8 +33,6 @@ void loop() {
   
   radio.write(&data, sizeof(data));
   delay(15);
-
-  Serial.println(data[0]);
-  // Serial.println(data[3]);
+  
 }
 
